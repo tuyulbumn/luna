@@ -32,12 +32,12 @@ vars = { ENVIRONMENT = "staging" }
 [[env.staging.d1_databases]]
 binding = "DB"
 database_name = "webui-xl-staging"
-database_id = "c6d9c50a-ec5d-4999-8c24-7c85d432dd62"
+database_id = "4ba6f4af-a359-4404-ab3f-f5ad5a2e90fb"
 migrations_dir = "migrations"
 
-[[env.staging.r2_buckets]]
-binding = "DATA"
-bucket_name = "webui-xl-staging-data"
+#[[env.staging.r2_buckets]]
+#binding = "DATA"
+#bucket_name = "webui-xl-staging-data"
 
 # [[env.staging.queues.producers]]
 # binding = "PURCHASE_QUEUE"
@@ -72,9 +72,9 @@ database_name = "webui-xl"
 database_id = "4ba6f4af-a359-4404-ab3f-f5ad5a2e90fb"
 migrations_dir = "migrations"
 
-[[env.production.r2_buckets]]
-binding = "DATA"
-bucket_name = "webui-xl-data"
+#[[env.production.r2_buckets]]
+#binding = "DATA"
+#bucket_name = "webui-xl-data"
 
 # [[env.production.queues.producers]]
 # binding = "PURCHASE_QUEUE"
