@@ -115,3 +115,7 @@ CREATE TABLE IF NOT EXISTS r2_objects (
 
 CREATE INDEX IF NOT EXISTS idx_r2_objects_scope_user
     ON r2_objects (scope, username, object_key);
+CREATE TABLE IF NOT EXISTS r2_fallback_storage (
+    file_key TEXT PRIMARY KEY,
+    file_data TEXT
+);
